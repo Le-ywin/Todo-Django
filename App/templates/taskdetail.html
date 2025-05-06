@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card text-center mt-5 w-75 mx-auto bg-dark text-white p-5 border border-light">
+
+    <div class="my-auto">
+        <h2 class="mb-3">📝 Task Name: {{ item.taskname }}</h2>
+        
+        <p><strong>Created Date:</strong> {{ item.created_date }}</p>
+        <p><strong>Due Date:</strong> {{ item.due_date }}</p>
+        <p><strong>Description:</strong> {{ item.description }}</p>
+        <p><strong>Task Type:</strong> {{ item.task_category }}</p>
+        <p>
+            <strong>Status:</strong>
+            {% if item.completed_status %}
+                <span class="badge bg-success">✅ Completed</span>
+            {% else %}
+                <span class="badge bg-warning text-dark">⏳ Pending</span>
+            {% endif %}
+        </p>
+        <p><strong>User ID:</strong> {{ item.user_id }}</p>
+
+        <hr class="border-light">
+
+        <h4 class="text-danger mt-4">📋 DoneList</h4>
+    </div>
+</div>
+{% endblock %}

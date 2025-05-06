@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+  body {
+    background: linear-gradient(135deg, #e0eafc, grey);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 1.5rem;
+    padding: 3rem;
+    width: 90%;
+    max-width: 750px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+    color: #1a1a1a;
+  }
+
+  .glass-card h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .glass-card .brand {
+    font-size: 3rem;
+    font-weight: 800;
+    color: darkred;
+    margin-bottom: 1.5rem;
+  }
+
+  .glass-card p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+
+  .btn-modern {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+
+  .btn-modern-primary {
+    background-color: #ff3e6c;
+    color: white;
+    border: none;
+    margin-right: 1rem;
+  }
+
+  .btn-modern-primary:hover {
+    background-color: #e2335e;
+  }
+
+  .btn-modern-outline {
+    background: transparent;
+    border: 2px solid #ff3e6c;
+    color: #ff3e6c;
+  }
+
+  .btn-modern-outline:hover {
+    background-color: #ff3e6c;
+    color: white;
+  }
+</style>
+
+<div class="glass-card">
+  <h1>Simplify Your Day With</h1>
+  <h1 class="brand">DoneList</h1>
+  <p>Stay focused, stay organized. Manage your daily tasks with ease using DoneList — your intelligent productivity companion.</p>
+  <div>
+    <a href="{% url 'signup' %}" class="btn-modern btn-modern-primary">Start Now</a>
+    <a href="#" class="btn-modern btn-modern-outline">Learn More</a>
+  </div>
+</div>
+{% endblock %}
