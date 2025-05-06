@@ -2,6 +2,8 @@
 
 A simple and productive Todo WebApp built with Django. Users can register, log in, manage tasks by category, and securely reset their passwords.
 
+
+
 ## 🚀 Features
 
 - ✅ User Registration & Login  
@@ -10,12 +12,16 @@ A simple and productive Todo WebApp built with Django. Users can register, log i
 - 📝 Create, Read, Update, Delete (CRUD) Todos  
 - 🎯 Clean and responsive UI to boost productivity  
 
+
+
 ## 🔧 Tech Stack
 
 - Backend: Django (Python)  
 - Frontend: HTML, CSS (Bootstrap)  
 - Database: SQLite (default Django DB)  
 - Authentication: Django's built-in auth system
+
+
 
 ## 🛠️ Setup Instructions
 
